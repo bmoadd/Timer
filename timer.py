@@ -29,7 +29,7 @@ def timer(seconds):
         seconds_left = remains % 60 
 
         print(f"{CLEAR_CONSTANTLY}{hours_left:01d}:{minutes_left:02d}:{seconds_left:02d}")
-    playsound("alarm.mp3")
+    playsound("Majula.mp3")
 #here i didn't know how to do the 2 degit thing and keep it around at all time the command was to add :02d
 
 Timer = int(input('Select a timer: '))
@@ -57,6 +57,3 @@ else:
     sec  = int(input("seconds? : "))
     sec_calc = hours*3600 + minutes *60 + sec
     timer(sec_calc)
-
-#to use the timer fill in the number before "60" with the amount of minutes you want and after + the amount of sec you want
-#for example if you want 2 min and 30 sec it's gonna be something like this (2*60 + 30)15
